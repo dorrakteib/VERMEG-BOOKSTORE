@@ -13,13 +13,15 @@ public class Main {
             System.out.print("Please enter the product's unit price \t");
             double price = sc.nextDouble();
             // if the entred price is invalid an error message will be shown
-            if (price<=0 ) System.out.println("Invalid price please verify then run the program again");
+            if (price <= 0)
+                System.out.println("Invalid price please verify then run the program again");
             else {
                 System.out.print("Please enter the product's quantity \t");
                 int qty = sc.nextInt();
 
                 // if the entred quantity is invalid an error message will be shown
-                if (qty<=0 ) System.out.println("Invalid quantity please verify then run the program again");
+                if (qty <= 0)
+                    System.out.println("Invalid quantity please verify then run the program again");
                 else {
                     Purchase p = new Purchase(qty, price);
                     // the output: the total price
